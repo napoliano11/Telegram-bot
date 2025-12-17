@@ -1,11 +1,18 @@
 import telebot
 from telebot import types
 import time
+import os  # needed to read environment variables
 
 # ================= CONFIG =================
-TOKEN = "TOKEN = "YOUR_TOKEN_HERE""
+TOKEN = os.getenv("TOKEN")  # reads the token from Railway variable
 ADMIN_ID = 1006994687
 PASSWORD = "1234"
+
+# Initialize bot
+bot = telebot.TeleBot(TOKEN)
+
+# Example: simple polling loop
+bot.infinity_polling()
 
 # ================= DATA ===================
 UNITS = ["PUA", "PUB", "PUC", "PUF", "PBF", "AHA", "AHB", "AHC"]
