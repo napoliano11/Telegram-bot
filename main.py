@@ -3,7 +3,7 @@ from telebot import types
 import time
 
 # ================= CONFIG =================
-TOKEN = "8518620222:AAHIfmwNkKOet1JUcgScp91C9YbxzYYweew"
+TOKEN = "TOKEN = "YOUR_TOKEN_HERE""
 ADMIN_ID = 1006994687
 PASSWORD = "1234"
 
